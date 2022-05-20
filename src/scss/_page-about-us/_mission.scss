@@ -1,0 +1,105 @@
+.mission {
+    &__content-box {
+        display: flex;
+        align-items: center;
+        padding: 120px 0;
+    }
+
+    &__img-box {
+    }
+
+    &__img {
+    }
+
+    &__item-box-content {
+        margin-left: 48px;
+    }
+
+    &__info-box {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__info-text:first-child {
+        @extend %rubik-700;
+        font-size: 140px;
+        color: $btn;
+    }
+    &__info-text:last-child {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $accent-2;
+        padding: 0 0 15px 31px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $accent-2;
+        margin-top: 34px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $accent-2;
+        margin-top: 32px;
+        line-height: 30px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #e6eaf0;
+    }
+}
+.progress-box {
+    display: flex;
+    margin-top: 23px;
+    &__item {
+        display: flex;
+        margin-right: 28px;
+    }
+    &__item:nth-child(2) {
+        border-right: 1px solid #e6eaf0;
+        border-left: 1px solid #e6eaf0;
+        padding: 0 28px;
+    }
+
+    &__text-box {
+        margin-left: 18px;
+    }
+
+    &__num {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $accent-2;
+    }
+
+    &__text {
+        @extend %dmsans-700;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+.statistic-block {
+    background-color: #fcd7b6;
+    @extend %dmsans-700;
+    color: $accent-2;
+    &__items-box {
+        padding: 88px 0 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__num {
+        font-size: 36px;
+        margin: 23px 0;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}

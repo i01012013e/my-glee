@@ -83,12 +83,13 @@
         top: 6px;
         left: 45px;
         padding-top: 1px;
+        line-height: 15px;
     }
     &__btn-grid {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: $accent;
+        background-color: $btn;
         padding-left: 1px;
     }
 }

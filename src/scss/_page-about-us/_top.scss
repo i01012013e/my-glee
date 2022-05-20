@@ -1,0 +1,48 @@
+.top {
+    font-family: "Rubik";
+    background-color: #edf1f4;
+    &__content-box {
+        padding: 34px 0 36px;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 300;
+    }
+}
+.bread-crumbs {
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-top: 17px;
+    }
+
+    &__item {
+        margin-right: 6px;
+    }
+    &__item:last-child {
+        .bread-crumbs__link {
+            color: $accent;
+            &::after {
+                block-size: 0;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        color: #979ba0;
+        font-weight: 400;
+        display: flex;
+        align-items: stretch;
+        &::after {
+            display: block;
+            content: "";
+            width: 1px;
+            height: 12px;
+            transform: rotate(12deg);
+            background-color: #979ba0;
+            margin-left: 6px;
+        }
+    }
+}

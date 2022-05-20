@@ -1,13 +1,20 @@
+// ! style header
 @import "global/_global.scss";
 
+// ! style header
 @import "_header/_header.scss";
 
+// ! style page index
 @import "_page-index/_top-slider.scss";
 @import "_page-index/_product.scss";
 @import "_page-index/_new-desing.scss";
 @import "_page-index/_promo-video.scss";
 @import "_page-index/_our-articles.scss";
 
+// ! style page about-us
+@import "_page-about-us/_top.scss";
+@import "_page-about-us/_mission.scss";
+@import "_page-about-us/_our-team.scss";
+
+// ! style footer
 @import "_footer/_footer.scss";
-
-
