@@ -1,0 +1,32 @@
+.new-desing {
+    &__inner {
+        padding: 100px 0 120px 0;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 34px 30px;
+    }
+
+    &__item-box {
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 369px;
+        height: 246px;
+        padding: 43px 0 0 37px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 20px;
+        color: #191919;
+        width: 180px;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #a3bbc8;
+    }
+}

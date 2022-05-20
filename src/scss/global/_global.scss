@@ -1,0 +1,36 @@
+@import "_reset.scss";
+@import "_font.scss";
+@import "_var.scss";
+@import "_extend.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    @extend %roboto-400;
+}
+
+button{
+	line-height: 1px;
+	border: none;
+	cursor: pointer;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.max-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

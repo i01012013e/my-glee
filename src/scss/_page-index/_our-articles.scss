@@ -1,0 +1,124 @@
+.our-articles {
+    &__inner {
+        padding: 120px 0 0 0;
+    }
+
+    &__title-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: #191919;
+    }
+
+    &__link {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #191919;
+        transition: 0.5s;
+        span {
+            margin-right: 15px;
+        }
+        &:hover {
+            color: #a3bbc8;
+            path {
+                transition: 0.5s;
+                fill: #a3bbc8;
+            }
+        }
+    }
+
+    &__items-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -182px;
+    }
+
+    &__item {
+        max-width: 371px;
+        background-color: #fff;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.08);
+    }
+
+    &__img-box {
+        position: relative;
+    }
+
+    &__img {
+        max-width: 371px;
+        width: 100%;
+    }
+    &__decor {
+        @extend %poppins-700;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 30px;
+        line-height: 1;
+        background-color: $btn;
+        border-radius: 18px;
+        position: absolute;
+        bottom: -12px;
+        left: 29px;
+    }
+
+    &__info-box {
+        padding: 30px 27px 0 27px;
+    }
+
+    &__text-link {
+        @extend %dmsans-500;
+        font-size: 18px;
+        color: #262626;
+        min-height: 80px;
+    }
+    &__text {
+        padding-bottom: 10px;
+    }
+    &__author-link {
+        display: flex;
+        align-items: center;
+        padding: 22px 0 30px 0;
+        border-top: 1px solid #e0e0e0;
+        @extend %dmsans-500;
+        font-size: 12px;
+        color: #222933;
+        transition: 0.5s;
+        svg {
+            width: 13px;
+            height: 13px;
+            margin-right: 10px;
+        }
+        &:hover {
+            color: #a3bbc8;
+            path {
+                transition: 0.5s;
+                fill: #a3bbc8;
+            }
+        }
+    }
+
+    &__author {
+    }
+
+    &__date {
+        margin-right: 18px;
+    }
+}
+.partners {
+    background-color: #fef7f0;
+    padding: 264px 0 88px 0;
+    position: relative;
+    z-index: -1;
+    &__img-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+

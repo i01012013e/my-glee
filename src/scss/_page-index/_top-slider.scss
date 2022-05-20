@@ -1,0 +1,116 @@
+.top-slider {
+    &__content-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fcd7b6;
+        padding: 100px 0 90px 0;
+    }
+    &__content {
+        max-width: 420px;
+        margin-left: 300px;
+    }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 72px;
+        color: #243f4d;
+        margin-bottom: 30px;
+        line-height: 70px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 18px;
+        color: #436372;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        @extend %rubik-500;
+        font-size: 15px;
+        width: 200px;
+        height: 60px;
+        background-color: #a3bbc8;
+        color: #fff;
+        padding: 21px 0 21px 28px;
+        transition: 0.3s;
+        svg {
+            margin-left: 55px;
+        }
+        &:hover {
+            background-color: #fff;
+            color: #a3bbc8;
+            path {
+                fill: #a3bbc8;
+            }
+        }
+    }
+    &__img {
+        margin-left: 124px;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        bottom: 45px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        li {
+            margin: 0 6px;
+            button {
+                @extend %rubik-500;
+                width: 30px;
+                height: 30px;
+                font-size: 11px;
+                background-color: #fde3cc;
+                border-radius: 50%;
+                z-index: 4;
+            }
+        }
+        .slick-active {
+            button {
+                background-color: #fff;
+            }
+        }
+    }
+}
+.slider-info {
+    display: flex;
+    background-color: #fef7f0;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 604px;
+        min-height: 170px;
+    }
+    &__item:nth-child(2) {
+            border-left: 1px solid #e8e4df;
+            border-right: 1px solid #e8e4df;
+            padding-bottom: 18px;
+            .slider-info__img-box{
+                padding-bottom: 0px;
+            }
+    }
+
+    &__img-box{
+        margin-right: 25px;
+        padding-bottom: 15px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: #414141;
+        line-height: 40px;
+    }
+
+    &__text {
+        @extend %dmsans-400;
+        font-size: 16px;
+        color: #585858;
+        line-height: 30px;
+    }
+}

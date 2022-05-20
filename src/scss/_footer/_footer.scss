@@ -1,0 +1,109 @@
+.footer {
+    .footer-top__link,
+    .footer-nav__link,
+    .footer-bottom__link,
+    .footer-bottom__text {
+        @extend %rubik-400;
+        font-size: 15px;
+        color: $subtext;
+    }
+    .footer-top__title,
+    .footer-nav__title,
+    .footer-bottom__title {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #1f2044;
+    }
+}
+.footer-top {
+    padding: 86px 0 63px 0;
+    display: flex;
+    justify-content: space-between;
+    &__item-contact {
+        width: 290px;
+        padding-right: 16px;
+    }
+
+    &__logo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__link {
+        line-height: 24px;
+    }
+    &__link + &__link {
+        margin-top: 17px;
+    }
+}
+.footer-nav {
+    width: 150px;
+    margin-top: 16px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__item + &__item {
+        margin-top: 17px;
+    }
+}
+.footer-form {
+    margin-top: 16px;
+    width: 270px;
+    &__title {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #1f2044;
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        font-size: 15px;
+        color: $subtext;
+        line-height: 24px;
+        margin-bottom: 45px;
+    }
+
+    &__form-box {
+        display: flex;
+    }
+
+    &__input {
+        color: #234969;
+        font-size: 12px;
+        @extend %dmsans-400;
+        width: 170px;
+        height: 38px;
+        background-color: #fef7f0;
+        border: none;
+        padding: 0 15px;
+        &::placeholder {
+            color: #234969;
+        }
+    }
+
+    &__btn {
+        font-size: 14px;
+        @extend %dmsans-400;
+        width: 100px;
+        height: 38px;
+        background-color: #a3bbc8;
+        color: #fff;
+    }
+}
+.footer-bottom {
+    padding: 35px 0;
+    border-top: 1px solid #dae4e9;
+    display: flex;
+    justify-content: space-between;
+    &__list-item {
+        display: flex;
+    }
+    &__link {
+        padding: 0 14px 0 14px;
+        border-right: 1px solid $subtext;
+    }
+    &__link:last-child {
+        border: none;
+    }
+}
+

@@ -1,0 +1,94 @@
+.header {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 0;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item + &__item {
+        margin-left: 35px;
+    }
+    &__item:nth-child(1),
+    &__item:nth-child(4) {
+        &:hover {
+            .menu__sub-list {
+                position: absolute;
+                display: block;
+            }
+            .menu__item {
+                margin: 0;
+                padding: 10px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__link {
+        @extend %rubik-500;
+        font-size: 15px;
+        color: $accent;
+    }
+
+    &__sub-list {
+        z-index: 5;
+        display: none;
+    }
+}
+.user-nav {
+    display: flex;
+    align-items: center;
+    &__btn-search {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #edf1f4;
+        margin-right: 21px;
+    }
+
+    &__link-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 50px;
+        margin-right: 21px;
+        background-color: #fcd7b6;
+        border-radius: 25px;
+    }
+
+    &__link {
+        position: relative;
+        padding: 14px 30px 3px 30px;
+    }
+    &__link + &__link {
+        border-left: 1px solid #fde7d3;
+    }
+
+    &__num {
+        position: absolute;
+        @extend %dmsans-400;
+        font-size: 11px;
+        background-color: #fff;
+        color: #243f4d;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        text-align: center;
+        top: 6px;
+        left: 45px;
+        padding-top: 1px;
+    }
+    &__btn-grid {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $accent;
+        padding-left: 1px;
+    }
+}

@@ -1,0 +1,16 @@
+.promo-video {
+    &__wrapper {
+        background-image: url(../img/images/promo-video-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    &__play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+}
+
