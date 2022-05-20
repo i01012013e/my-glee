@@ -89,6 +89,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 0.5s;
+        &:hover {
+            background-color: $btn;
+            path {
+                transition: 0.5s;
+                fill: #fff;
+            }
+        }
     }
     &__social-link + &__social-link {
         margin-left: 7px;
