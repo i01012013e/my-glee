@@ -16,5 +16,12 @@
 @import "_page-about-us/_mission.scss";
 @import "_page-about-us/_our-team.scss";
 
+// ! style page conditions
+@import "_page-conditions/_conditions.scss";
+
+// ! style page log-in
+@import "_page-login/_form-login.scss";
+
+
 // ! style footer
 @import "_footer/_footer.scss";

@@ -1,0 +1,54 @@
+.conditions {
+    &__inner {
+        padding: 60px 0 0;
+    }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        color: $accent-2;
+        margin-top: 60px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        display: flex;
+        .conditions__num,
+        .conditions__text {
+            margin-top: 30px;
+        }
+    }
+
+    &__num {
+        margin-right: 14px;
+    }
+
+    &__num,
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $accent-2;
+        margin-top: 26px;
+    }
+    .our-articles__title {
+        color: $accent-2;
+    }
+
+    .our-articles__link {
+        color: $accent-2;
+        transition: 0.5s;
+        span {
+            margin-right: 15px;
+        }
+        &:hover {
+            color: #a3bbc8;
+            path {
+                transition: 0.5s;
+                fill: #a3bbc8;
+            }
+        }
+    }
+}

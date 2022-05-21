@@ -25,6 +25,7 @@
             color: $accent;
             &::after {
                 block-size: 0;
+                margin-left: 0;
             }
         }
     }

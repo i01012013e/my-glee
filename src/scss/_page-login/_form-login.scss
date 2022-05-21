@@ -1,0 +1,89 @@
+.form-login {
+    @extend %rubik-400;
+    font-size: 14px;
+    color: $accent;
+    &__form-box {
+        padding-top: 120px;
+        max-width: 470px;
+        margin: 0 auto;
+    }
+
+    &__label {
+        display: block;
+    }
+    &__label + &__label {
+        margin: 28px 0 36px;
+    }
+    &__label:nth-child(3) {
+    }
+    &__label:nth-child(4) {
+        display: flex;
+        justify-content: space-between;
+        .form-login__link {
+            height: 0px;
+            border: none;       
+        }
+    }
+    &__label:nth-child(5) {
+        text-align: center;
+        .form-login__link {
+            font-size: 18px;
+            @extend %rubik-500;
+            color: $accent-2;
+            margin-top: 24px;
+            text-align: center;
+            padding-top: 19px;
+            height: 60px;
+        }
+    }
+
+    &__box-checkbox {
+        display: flex;
+    }
+
+    &__input-checkbox {
+        @extend %checkbox-hidde;
+        &:checked + .form-login__checkbox {
+            background-image: url(../img/icon/checkbox.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__checkbox {
+        width: 14px;
+        height: 14px;
+        display: block;
+        background-color: #ebebeb;
+        margin-right: 13px;
+        border-radius: 3px;
+    }
+
+    &__input {
+        margin-top: 15px;
+        padding: 0 15px;
+        border: 1px solid #e2e2e2;
+    }
+
+    &__btn {
+        background-color: #a3bbc8;
+        color: #fff;
+        font-size: 18px;
+        @extend %rubik-500;
+        margin-bottom: 36px;
+    }
+
+    &__link {
+        @extend %rubik-400;
+        font-size: 14px;
+        color: $accent;
+        border: 2px solid #a3bbc8;
+    }
+
+    &__input,
+    &__btn {
+        display: block;
+        height: 60px;
+        width: 100%;
+    }
+}
