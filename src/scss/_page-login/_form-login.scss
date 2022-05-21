@@ -14,11 +14,11 @@
     &__label + &__label {
         margin: 28px 0 36px;
     }
-    &__label:nth-child(3) {
-    }
+
     &__label:nth-child(4) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 35px;
         .form-login__link {
             height: 0px;
             border: none;       
@@ -26,6 +26,9 @@
     }
     &__label:nth-child(5) {
         text-align: center;
+        margin: 0;
+        padding-top: 35px;
+        border-top: 1px solid #e2e2e2;
         .form-login__link {
             font-size: 18px;
             @extend %rubik-500;
@@ -85,5 +88,9 @@
         display: block;
         height: 60px;
         width: 100%;
+    }
+    .partners{
+        margin-top: 120px;
+        padding: 88px 0;
     }
 }
