@@ -91,5 +91,8 @@
         border-radius: 50%;
         background-color: $btn;
         padding-left: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
