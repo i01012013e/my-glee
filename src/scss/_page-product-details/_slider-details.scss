@@ -1,0 +1,46 @@
+.details-slider {
+    @extend %dmsans-700;
+
+    &__inner {
+    }
+
+    &__top-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 63px;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $accent-2;
+    }
+
+    &__prev-arrow,
+    &__next-arrow  {
+        background-color: #fff;
+        border: 2px solid #edf1f4;
+        border-radius: 5px;
+        padding: 20px 12px;
+        transition: 0.3s all;
+        &:hover{
+            border-color: $btn;
+        }
+    }
+    &__prev-arrow {
+        margin-right: 20px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-board {
+
+        &__item-box {
+            width: 270px;
+        }
+    }
+}
+
+

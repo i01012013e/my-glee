@@ -1,0 +1,115 @@
+.product-details {
+    @extend %rubik-400;
+    font-size: 16px;
+    color: $accent-2;
+    &__inner {
+        padding: 120px 0 104px;
+    }
+}
+.details-block {
+    display: flex;
+}
+.details-tabs-box {
+    &__img {
+        width: 138px;
+        height: 160px;
+        border: 1px solid #dedddd;
+        padding: 13px 15px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+    &__img + &__img {
+        margin-top: 25px;
+    }
+}
+.details-box {
+    display: flex;
+    align-items: center;
+    &__img {
+        width: 387px;
+        height: 530px;
+        border: 1px solid #dedddd;
+        padding: 62px 77px;
+        margin-right: 70px;
+    }
+
+    &__info-box {
+        max-width: 550px;
+    }
+
+    &__title {
+        font-size: 40px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+    .product-block__star-box {
+        margin: 0 0 27px 0;
+    }
+
+    &__price {
+        font-size: 30px;
+        color: #333333;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+
+    &__calc-box {
+        display: flex;
+        margin-bottom: 49px;
+    }
+
+    &__minus,
+    &__number,
+    &__plus {
+        padding: 17px 23px;
+        border: 1px solid $btn;
+    }
+
+    &__link {
+        font-size: 15px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        background-color: $btn;
+        border-radius: 5px;
+        margin-left: 15px;
+        padding: 20px 62px;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+}
+.product-reviews {
+    margin-top: 100px;
+    &__tabs-box {
+        text-align: center;
+    }
+
+    &__tab {
+        @extend %rubik-500;
+        width: 241px;
+        height: 53px;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        color: $accent-2;
+        background-color: #edf1f4;
+        border-radius: 5px;
+        margin-right: 15px;
+        padding-top: 4px;
+    }
+    &__tab--active {
+        color: #fff;
+        background-color: $btn;
+    }
+
+    &__discription {
+        line-height: 30px;
+        margin-top: 40px;
+    }
+}
