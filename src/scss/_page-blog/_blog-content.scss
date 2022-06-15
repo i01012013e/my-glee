@@ -5,8 +5,8 @@
         padding-top: 120px;
     }
 
-    &__items-box{
-        max-width: 830px
+    &__items-box {
+        max-width: 830px;
     }
 
     .blog-item {
@@ -44,9 +44,16 @@
 
         &__text {
             font-size: 16px;
-            color: $accent;
+            color: $btn;
             line-height: 30px;
             margin-bottom: 35px;
+        }
+        .best-product__link {
+            color: $btn;
+            border: 1px solid $btn;
+            & path {
+                fill: #a3bbc8;
+            }
         }
     }
     .filter-search {
@@ -75,7 +82,7 @@
         &__post-box {
             display: flex;
         }
-        .recend-posts__post-box + .recend-posts__post-box  {
+        .recend-posts__post-box + .recend-posts__post-box {
             margin-top: 22px;
         }
 
@@ -106,7 +113,7 @@
         width: 270px;
         margin-top: 25px;
     }
-    .partners{
+    .partners {
         padding: 82px 0 91px 0;
         margin-top: 120px;
     }
